@@ -3,20 +3,20 @@ const n = 3;
 const m = 4;
 const start = [1, 1];
 export const now = [...start];
-const errorImage = "../imgs/error.jpg";
+const errorImage = "#sky-error";
 
 const scenes = Array.from({ length: n }, () => Array(m).fill(errorImage));
 
-scenes[0][1] = "../imgs/00.jpg";
-scenes[0][2] = "../imgs/01.jpg";
-scenes[0][3] = "../imgs/02.jpg";
-scenes[1][0] = "../imgs/03.jpg";
-scenes[1][1] = "../imgs/04.jpg";
-scenes[1][2] = "../imgs/05.jpg";
-scenes[1][3] = "../imgs/06.jpg";
-scenes[2][0] = "../imgs/07.jpg";
-scenes[2][1] = "../imgs/08.jpg";
-scenes[2][3] = "../imgs/09.jpg";
+scenes[0][1] = "#sky-00";
+scenes[0][2] = "#sky-01";
+scenes[0][3] = "#sky-02";
+scenes[1][0] = "#sky-03";
+scenes[1][1] = "#sky-04";
+scenes[1][2] = "#sky-05";
+scenes[1][3] = "#sky-06";
+scenes[2][0] = "#sky-07";
+scenes[2][1] = "#sky-08";
+scenes[2][3] = "#sky-09";
 /*************************************************************************/
 
 document.addEventListener("DOMContentLoaded", () => {
