@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script type="module" src="./js/settings.js"></script>
+    <script type="module" src="./js/scene-mover.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <table id="matrix"></table>
+    <a-scene cursor="rayOrigin: mouse" raycaster="objects:.raycastable">
+      <a-triangle
+        id="uparrow"
+        position="0 0 -3"
+        rotation="-90 0 0 "
+        scene-mover="up: -1; right: 0"
+      ></a-triangle>
+      <a-triangle
+        id="downarrow"
+        position="0 0 3"
+        rotation="-90 180 0 "
+        scene-mover="up: 1; right: 0"
+      ></a-triangle>
+      <a-triangle
+        id="rightarrow"
+        position="3 0 0"
+        rotation="-90 -90 0 "
+        scene-mover="up: 0; right: 1"
+      ></a-triangle>
+      <a-triangle
+        id="leftarrow"
+        position="-3 0 0"
+        rotation="-90 90 0 "
+        scene-mover="up: 0; right: -1"
+      ></a-triangle>
+      <a-sky color="lightblue"></a-sky>
+      <a-camera wasd-controls="enabled: false"></a-camera>
+    </a-scene>
+  </body>
+</html>

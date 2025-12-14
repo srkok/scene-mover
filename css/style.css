@@ -1,0 +1,29 @@
+#matrix {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-collapse: collapse;
+  z-index: 100;
+}
+#matrix td {
+  border: 1px solid #333;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  z-index: 200;
+}
+.now {
+  background-color: red;
+}
+.move-available {
+  background-color: yellow;
+  cursor: pointer;
+}
+.move-available:hover {
+  background-color: orange;
+}
+.target {
+  background-color: orange;
+  cursor: pointer;
+  z-index: 210;
+}
